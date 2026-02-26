@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  
+  --color-peach-bg: #FFF5F0;
+  --color-peach-accent: #FFB07C;
+  --color-ink: #4A3728;
+}
+
+@layer base {
+  body {
+    @apply bg-peach-bg text-ink font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+.glass-card {
+  @apply bg-white/60 backdrop-blur-md border border-white/40 shadow-sm;
+}
+
+.input-field {
+  @apply w-full bg-transparent border-b border-ink/20 py-2 px-1 focus:border-peach-accent outline-none transition-colors duration-300;
+}
+
+.btn-primary {
+  @apply bg-peach-accent text-white px-8 py-3 rounded-full hover:bg-peach-accent/90 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-md shadow-peach-accent/20;
+}
+
+.btn-secondary {
+  @apply border border-peach-accent text-peach-accent px-8 py-3 rounded-full hover:bg-peach-accent hover:text-white transition-all duration-300;
+}
+

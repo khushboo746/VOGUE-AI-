@@ -1,0 +1,5 @@
+{
+  "name": "VOGUE AI - Personal Fashion Stylist",
+  "description": "An AI-powered fashion assistant that creates personalized outfit recommendations based on occasion, body type, generation, and cultural style.",
+  "requestFramePermissions": ["geolocation"]
+}
